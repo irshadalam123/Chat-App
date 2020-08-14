@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item android:id="@+id/search"-->
+<!--        android:title="Search"-->
+<!--        android:icon="@drawable/ic_search"-->
+<!--        app:showAsAction="always"/>-->
+
+    <item android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/find_friends"
+        android:title="Find Friends"/>
+
+    <item android:id="@+id/request_of_friends"
+        android:title="Request"/>
+
+    <item android:id="@+id/logout"
+        android:title="logout"/>
+
+</menu>

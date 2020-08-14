@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestFriends">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/request_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#910DE1"
+        app:titleTextColor="#FFFFFF" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/friend_request_tab"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/request_toolbar"
+        android:background="#910DE1"
+        app:tabIndicatorColor="#FFFF"
+        app:tabSelectedTextColor="#FFFF"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/request_receive_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Receive"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/request_sent_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Sent"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <fragment
+        android:id="@+id/request_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.messenger.RequestReceiveFrag"
+        android:layout_below="@+id/friend_request_tab"
+        tools:layout="@layout/activity_request_friends" />
+
+
+
+</RelativeLayout>

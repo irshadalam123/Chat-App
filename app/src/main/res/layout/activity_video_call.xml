@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoCall">
+
+   <ImageView
+       android:id="@+id/calling_profile_image"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@drawable/profile"
+       android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/calling_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text"
+        android:gravity="center"
+        android:text="user name"
+        android:textColor="#014E05"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout1"
+        android:gravity="center"
+        android:text="Calling..."
+        android:textColor="#000B01"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/make_call_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="150dp"
+            android:visibility="gone"
+            android:src="@drawable/call_receive_btn" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cancel_call"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/call_end_btn"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/users_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="4.3"
+                android:src="@drawable/profile"
+                 />
+
+            <TextView
+                android:id="@+id/friends_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.1"
+                android:gravity="center_vertical"
+                android:text="User Name"
+                android:textColor="#0E0E0E"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/request_show_button"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/online_show_button"
+                android:tint="#12D11C"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="right"
+            android:background="#DDDBDB" />
+
+    </LinearLayout>
+
+</RelativeLayout>
